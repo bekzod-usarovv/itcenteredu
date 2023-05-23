@@ -1,0 +1,21 @@
+#banner{
+    height: 80vh;
+}
+
+.banner-text{
+    top: 30%;
+}
+
+.h2{
+    color: #05364D;
+}
+p{
+    color:#27006a;
+}
+.kurs button a{
+    color:#fff;
+    text-decoration: none;
+}
+.text-letters{
+    line-height: 35px;
+}

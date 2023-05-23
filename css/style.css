@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====Loader =======*/
+.loading{
+    margin: 0 auto;
+    position: fixed;
+    background-color:#ffffff ;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    animation: adeOut 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadeOut 1s;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation: fadeOut 1s;
+    -o-animation-fill-mode: forwards;
+    -moz-animation: fadeOut 1s;
+    -moz-animation-fill-mode: forwards;
+  }
+  .main{
+    margin: 15rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  .dot{
+    border: 5px solid #000000;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  .dot2{
+    border: 5px solid #fffb00;
+    border-radius: 50px;
+    background-color:transparent;
+    width: 100px;
+    height: 100px;
+    margin: -5px  -5px;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    animation:  loader 1s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation:  loader 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation:  loader 1s linear;
+    -o-animation-iteration-count: infinite;
+    -moz-animation:  loader 1s linear;
+    -moz-animation-iteration-count: infinite;
+  }
+  @keyframes loader {
+    100%{
+      transform: rotate(360deg);
+    }
+
+  }
+  @-webkit-keyframes loader {
+    100%{
+      transform: rotate(360deg);
+    }
+
+  }
+
+  @keyframes fadeOut {
+    100%{
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes fadeOut {
+    100%{
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+
+  /* =====Loader =======*/
+@font-face {
+    font-family:Com_wght ;
+    src: url(../Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:Com_regular ;
+    src: url(../Comfortaa/static/Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family:Com_sb ;
+    src: url(../Comfortaa/static/Comfortaa-SemiBold.ttf);
+}
+@font-face {
+    font-family:Com_b ;
+    src: url(../Comfortaa/static/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family:Com_l ;
+    src: url(../Comfortaa/static/Comfortaa-Light.ttf);
+}
+/* =====Navbar Menu ===== */
+.navbar-brand img{
+    width: 65%;
+}
+.fixed-2{
+    position: fixed;
+    top: 0;
+    max-width: 80%;
+}
+/* =====Navbar Menu ===== */
+
+
+/*======== Banner CSS ============ */
+#banner{
+    /* background-image: linear-gradient(rgba(4, 0, 255, 0.295),rgba(0, 26, 255, 0.308)); */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: banner 18s ease-in-out infinite;
+}
+
+@keyframes banner {
+    0%{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.748),rgba(0, 0, 0, 0.69)), url(../img/2.banner/banner.jpg);
+    }
+    25%{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.661)), url(../img/2.banner/Picsart_2.jpg);
+    }
+    50%{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.668)), url(../img/2.banner/Picsart_3.jpg);
+    }
+    75%{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.668)), url(../img/2.banner/Picsart_4.jpg);
+    }
+    100%{
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.668)),url(../img/2.banner/Picsart_5.jpg);
+    }
+}
+
+.banner-text{
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+.banner-text h1{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: Com_wght;
+}
+.banner-text p{
+    color: #fff;
+    font-size: 2.2rem;
+    padding: 0.1rem 0;
+    margin: 0;
+    font-family: Com_wght;
+}
+.banner-text p span{
+    color: #7cb73f;
+}
+/* ======= Banner CSS ====== */
+
+
+/* ====== About Me ======== */
+.about__title{
+    text-align: center;
+    font-family: Com_b;
+    padding-top: 100px;
+}
+.about__title h2{
+    font-size: 2.8rem;
+    color: #05364D;
+}
+.about__title-span{
+    position: absolute;
+    border-top: 5px solid #7cb73f;
+    border-radius: 8px;
+    width: 120px;
+    margin: -15px 0;
+    transform: translateX(-50%);
+}
+.about__img{
+    text-align: center;
+}
+.about__img-hover img{
+    transition: all 0.5s ease;
+}
+.about__img-hover:hover img{
+    transform: scale(1.3);
+}
+.about__img-hover{
+    overflow: hidden;
+}
+.about__img-hover{
+    position: relative;
+}
+.about__img-hover::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.about__img-hover span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.548);
+}
+.about__img p{
+    font-family: Com_sb;
+    color: #05364D;
+    padding-top: 1rem;
+}
+/* ====== About Me ======== */
+
+
+
+/* ====== kurslar ======== */
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #7cb73f;
+    --bs-btn-border-color: #7cb73f;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6ba134;
+    --bs-btn-hover-border-color: #629d27;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #477b13;
+    --bs-btn-active-border-color: #457912;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6eab32;
+    --bs-btn-disabled-border-color: #67a22b;
+    font-family: Com_wght;
+}
+.kurslar .p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: #05364D;
+    font-size: 1.2rem;
+    font-family: Com_wght;
+}
+.kurslar__img{
+    text-align: center;
+}
+.kurslar__img .card{
+    box-shadow: 0px 10px 20px rgb(5 54 77);
+    background-color: #e4e4e4;
+}
+.kurslar__pos{
+    position: relative;
+}
+.kurslar__pos img{
+    width: 100%;
+}
+.kurslar__pos::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.kurslar__pos span:first-of-type {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #7cb73f;
+    padding: 0.15rem 0.6rem;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 1.3rem;
+    font-family: Com_l;
+}
+.kurslar__pos  span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: Com_l;
+}
+.kurslar__pos span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 1px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.301);
+    font-weight: 700;
+    font-size: 1.1rem;
+    font-family: Com_l;
+}
+.kurslar-haqida li a{
+    padding: 0 0.5rem;
+    color: #000;
+    text-decoration: none;
+    font-family: Com_wght;
+    font-size: 1rem;
+    text-align: center;
+}
+.kurslar__img h3{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: -4px;
+    background-color: #e4e4e4;
+    padding: 25px 0;
+    color: #05364D;
+    font-family: Com_wght;
+}
+.kurslar__img p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #27006a;
+    font-family: Com_wght;
+}
+.kurslar__img a{
+    text-decoration: none;
+}
+/* ====== kurslar ======== */
+
+/* ===== Ommobot ===== */
+.ommabop-img h3{
+    font-family: Com_wght;
+    font-size: 1.5rem;
+}
+.ommabop-img p{
+    font-family: Com_wght;
+}
+.ommabop-img button a{
+    color:#fff;
+    text-decoration: none;
+}
+/* ===== Ommobot ===== */
+
+
+/* ===== Xarita ======= */
+.adress iframe{
+    width: 100%;
+    height: 47rem;
+}
+/* ===== Xarita ======= */
+
+/* ====== Kontakt ======= */
+.kontakt__title{
+    text-align: center;
+    color: #fff;
+    font-family: Com_wght;
+}
+.bg-success{
+    background-color: #7cb73f !important;
+}
+.kontakt__email input::placeholder{
+    font-family: Com_wght;
+}
+.kontakt__email select{
+    font-family: Com_wght;
+}
+
+.kontakt-2 h3{
+    font-family: Com_wght;
+}
+
+.kontakt-2 button{
+    /* background-color: #48487f; */
+    padding: 0.8rem;
+    color: #fff;
+    font-weight: 300;
+}
+.kontakt-2 button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.kontakt-2 p{
+    margin: 0.6rem 0;
+    font-family: Com_wght;
+}
+.kontakt-2 span a{
+    padding: 0.1rem 0.5rem;
+    height: 0.7rem;
+    width: 0.7rem;
+    border: 1px solid #7cb73f;
+    border-radius: 50px;
+    color: #000;
+    margin: 0 0.5rem;
+    font-size: 1.9rem;
+    color: #7cb73f;
+    transition: all 0.4s ease;
+}
+.kontakt-2 span a:hover{
+    color: #fcfff9;
+    background-color: #7cb73f;
+    border: 1px solid #7cb73f;
+}
+.sc{
+    padding-bottom: 0.5rem;
+}
+.uch{
+    margin-top: 1rem;
+}
+/* ====== Kontakt ======= */
+
+
+/* Footer CSS */
+
+.footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-2 div a{
+    padding:  0.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #000;
+}
+.footer-2 div a{
+    color: rgb(0, 0, 0);
+    transition: all 0.4s ease;
+}
+.footer-2 div a:hover{
+    color: rgb(0, 0, 0);
+    background-color: #e4e4e4;
+}
+.footer-2 p a {
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+/* Footer CSS */
+
+footer{
+    background-color: #7cb73f;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+}
+footer p a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+footer p a:hover{
+    color:#ffffffde;
+}
+
+@media only screen and (max-width:767px){
+    .banner-text h1{
+        font-size: 2.1rem;
+    }
+
+    .banner-text p{
+        font-size: 0.9rem;
+    }
+
+    footer p a{
+        font-size: 1rem;
+    }
+}
